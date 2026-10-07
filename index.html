@@ -1,0 +1,142 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Form. In Motion. — Ismar Ruznic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fim.css"><style>body{margin:0;background:#F1EFEA}</style></head><body>
+<div class="fim" id="fim">
+  <nav class="fim-nav" aria-label="Primary">
+    <a class="fim-nav__name" href="#fim-top">Ismar Ruznic</a>
+    <div class="fim-nav__links">
+      <a href="#precision">Precision</a>
+      <a href="#form">Form</a>
+      <a href="#anatomy">Anatomy</a>
+      <a href="#play">Play</a>
+    </div>
+  </nav>
+
+  <header class="fim-hero" id="fim-top">
+    <h1 class="fim-hero__title" aria-label="Form. In motion.">
+      <span class="fim-line" aria-hidden="true"><span>Form.</span></span>
+      <span class="fim-line" aria-hidden="true"><span><em>In</em> motion.</span></span>
+    </h1>
+    <div class="fim-hero__foot">
+      <p class="fim-hero__lede" data-reveal>Four objects. Four ways to explore. A study in making digital experiences feel tangible.</p>
+      <nav class="fim-hero__index" aria-label="Chapters" data-reveal>
+        <a href="#precision"><b>01 Precision</b>Scroll orbit</a>
+        <a href="#form"><b>02 Form</b>Drag to rotate</a>
+        <a href="#anatomy"><b>03 Anatomy</b>Layer isolation</a>
+        <a href="#play"><b>04 Play</b>Pointer tilt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 01 WATCH -->
+  <section class="fim-chapter fim-chapter--scrub" id="precision" aria-labelledby="fim-t1">
+    <div class="fim-stage">
+      <div class="fim-copy">
+        <p class="fim-eyebrow" data-reveal><span>01</span><span>Precision</span></p>
+        <h2 class="fim-title" id="fim-t1"><span class="fim-line"><span>Time, from</span></span><span class="fim-line"><span>every angle.</span></span></h2>
+        <p class="fim-body" data-reveal>A familiar object, revealed slowly. The changing perspective brings the dial, polished case and metal bracelet into focus.</p>
+      </div>
+      <div class="fim-view" data-reveal="view">
+        <span class="fim-hint" aria-hidden="true">Scroll to orbit</span>
+        <div class="fim-model" data-model="watch">
+          <model-viewer alt="A classic wristwatch with a polished steel case and metal bracelet, slowly orbiting as the page scrolls." camera-orbit="200deg 80deg 112%" field-of-view="26deg" interaction-prompt="none" shadow-intensity="0.9" shadow-softness="1" exposure="1.05" environment-image="neutral" tone-mapping="neutral" disable-zoom disable-pan></model-viewer>
+          <div class="fim-loader" role="status"><span>Loading watch</span><i></i></div>
+        </div>
+        <div class="fim-caption" data-reveal>
+          <b>i.</b>
+          <span><strong>Scroll-controlled orbit.</strong> The scroll position controls the camera angle so the viewer can inspect the object gradually.</span>
+        </div>
+        <div class="fim-progress" aria-hidden="true"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 JUNO -->
+  <section class="fim-chapter fim-chapter--flip" id="form" aria-labelledby="fim-t2">
+    <div class="fim-stage">
+      <div class="fim-copy">
+        <p class="fim-eyebrow" data-reveal><span>02</span><span>Form</span></p>
+        <h2 class="fim-title" id="fim-t2"><span class="fim-line"><span>A new look</span></span><span class="fim-line"><span>at the</span></span><span class="fim-line"><span>timeless.</span></span></h2>
+        <p class="fim-body" data-reveal>Light, silhouette and sculpted detail. An ancient portrait becomes an object you can examine from your own perspective.</p>
+      </div>
+      <div class="fim-view" data-reveal="view">
+        <span class="fim-hint" aria-hidden="true">Drag to rotate</span>
+        <div class="fim-model" data-model="juno">
+          <model-viewer alt="Marble portrait head of Juno Ludovisi, the Roman goddess. Drag, or use the arrow keys, to rotate the sculpture." camera-controls disable-zoom disable-pan interaction-prompt="none" camera-orbit="155deg 84deg 112%" min-camera-orbit="auto 55deg auto" max-camera-orbit="auto 105deg auto" field-of-view="24deg" interpolation-decay="140" shadow-intensity="1" shadow-softness="0.8" exposure="1.0" environment-image="legacy" tone-mapping="neutral"></model-viewer>
+          <div class="fim-loader" role="status"><span>Loading sculpture</span><i></i></div>
+        </div>
+        <div class="fim-caption" data-reveal>
+          <b>ii.</b>
+          <span><strong>Drag-to-rotate exploration.</strong> Direct manipulation makes the sculpture feel tangible while keeping the camera focused on the subject.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 ANATOMY -->
+  <section class="fim-chapter fim-chapter--scrub fim-chapter--deep" id="anatomy" aria-labelledby="fim-t3">
+    <div class="fim-stage">
+      <div class="fim-copy">
+        <p class="fim-eyebrow" data-reveal><span>03</span><span>Anatomy</span></p>
+        <h2 class="fim-title" id="fim-t3"><span class="fim-line"><span>See beneath</span></span><span class="fim-line"><span>the surface.</span></span></h2>
+        <p class="fim-body" data-reveal>Complex information becomes easier to explore when you can control the view. Isolate a system, then turn it to understand its shape.</p>
+        <div class="fim-layers" role="group" aria-label="Anatomical layers" data-reveal>
+          <button type="button" data-layer="all" aria-pressed="true">All systems</button>
+          <button type="button" data-layer="skeleton" aria-pressed="false">Skeleton</button>
+          <button type="button" data-layer="muscles" aria-pressed="false">Muscles</button>
+        </div>
+        <p class="fim-layer-note" aria-live="polite" data-reveal>Showing skeleton, muscles, organs and vessels.</p>
+      </div>
+      <div class="fim-view" data-reveal="view">
+        <span class="fim-hint" aria-hidden="true">Scroll or drag</span>
+        <div class="fim-model" data-model="anatomy">
+          <model-viewer alt="Full-body anatomical model of a child showing skeleton, muscles, organs and blood vessels. Use the layer buttons to isolate a system and drag to rotate." camera-controls disable-zoom disable-pan interaction-prompt="none" camera-orbit="150deg 82deg 104%" field-of-view="28deg" min-camera-orbit="auto 60deg auto" max-camera-orbit="auto 100deg auto" interpolation-decay="120" shadow-intensity="0.6" exposure="1.1" environment-image="neutral" tone-mapping="neutral"></model-viewer>
+          <div class="fim-loader" role="status"><span>Loading anatomy</span><i></i></div>
+        </div>
+        <div class="fim-caption" data-reveal>
+          <b>iii.</b>
+          <span><strong>Layer isolation and guided orbit.</strong> The controls reduce visual complexity, while the camera movement introduces depth and helps explain the structure.</span>
+        </div>
+        <div class="fim-progress" aria-hidden="true"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 CONTROLLER -->
+  <section class="fim-chapter fim-chapter--flip fim-chapter--play" id="play" aria-labelledby="fim-t4">
+    <div class="fim-stage">
+      <div class="fim-copy">
+        <p class="fim-eyebrow" data-reveal><span>04</span><span>Play</span></p>
+        <h2 class="fim-title" id="fim-t4"><span class="fim-line"><span>Designed</span></span><span class="fim-line"><span>to respond.</span></span></h2>
+        <p class="fim-body" data-reveal>A small gesture creates an immediate response. The controller follows your pointer, turning passive viewing into a playful exchange.</p>
+      </div>
+      <div class="fim-view" data-reveal="view">
+        <span class="fim-hint" aria-hidden="true"><span class="fim-hint__desk">Move your pointer</span></span>
+        <div class="fim-model" data-model="controller">
+          <model-viewer alt="A game controller with analog sticks and a directional pad that tilts to follow the pointer." camera-orbit="0deg 70deg 105%" field-of-view="26deg" interaction-prompt="none" interpolation-decay="60" disable-zoom disable-pan shadow-intensity="1" shadow-softness="0.9" exposure="1.0" environment-image="neutral" tone-mapping="neutral"></model-viewer>
+          <div class="fim-loader" role="status"><span>Loading controller</span><i></i></div>
+        </div>
+        <div class="fim-caption" data-reveal>
+          <b>iv.</b>
+          <span><strong>Pointer-follow tilt.</strong> The object responds to the visitor’s movement, creating immediate feedback without distracting from the form.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="fim-close" aria-labelledby="fim-t5">
+    <h2 class="fim-close__title" id="fim-t5"><span class="fim-line"><span>Motion earns</span></span><span class="fim-line"><span>its place when</span></span><span class="fim-line"><span>it makes something</span></span><span class="fim-line"><span><em>clearer.</em></span></span></h2>
+    <div class="fim-close__grid">
+      <p class="fim-close__body" data-reveal>Precision, discovery, understanding and response. Each interaction has a different purpose, with the object and the visitor setting the pace.</p>
+      <ol class="fim-close__list" data-reveal>
+        <li><b>i.</b>Precision<span>Scroll</span></li>
+        <li><b>ii.</b>Discovery<span>Drag</span></li>
+        <li><b>iii.</b>Understanding<span>Isolate</span></li>
+        <li><b>iv.</b>Response<span>Pointer</span></li>
+      </ol>
+    </div>
+    <footer class="fim-foot"><span>Ismar Ruznic — Senior UI Designer application</span><a href="#fim-top">Back to top ↑</a></footer>
+  </section>
+</div>
+<script src="fim.js"></script></body></html>
