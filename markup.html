@@ -6,23 +6,23 @@
       <a href="#form">Form</a>
       <a href="#anatomy">Anatomy</a>
       <a href="#play">Play</a>
+      <a class="fim-btn" href="#precision">View study</a>
     </div>
   </nav>
 
   <header class="fim-hero" id="fim-top">
     <h1 class="fim-hero__title" aria-label="Form. In motion.">
       <span class="fim-line" aria-hidden="true"><span>Form.</span></span>
-      <span class="fim-line" aria-hidden="true"><span><em>In</em> motion.</span></span>
+      <span class="fim-line" aria-hidden="true"><span>In <span class="fim-frame">motion<i class="fim-tag">Scroll</i></span></span></span>
     </h1>
-    <div class="fim-hero__foot">
-      <p class="fim-hero__lede" data-reveal>Four objects. Four ways to explore. A study in making digital experiences feel tangible.</p>
-      <nav class="fim-hero__index" aria-label="Chapters" data-reveal>
-        <a href="#precision"><b>01 Precision</b>Scroll orbit</a>
-        <a href="#form"><b>02 Form</b>Drag to rotate</a>
-        <a href="#anatomy"><b>03 Anatomy</b>Layer isolation</a>
-        <a href="#play"><b>04 Play</b>Pointer tilt</a>
-      </nav>
-    </div>
+    <p class="fim-hero__lede" data-reveal>Four objects. Four ways to explore. A study in making digital experiences feel tangible.</p>
+    <nav class="fim-hero__index" aria-label="Chapters" data-reveal>
+      <a href="#precision"><b>01</b>Scroll orbit</a>
+      <a href="#form"><b>02</b>Drag to rotate</a>
+      <a href="#anatomy"><b>03</b>Layer isolation</a>
+      <a href="#play"><b>04</b>Pointer tilt</a>
+    </nav>
+    <a class="fim-btn fim-btn--lg" href="#precision" data-reveal>Start the study ↓</a>
   </header>
 
   <!-- 01 WATCH -->
@@ -59,7 +59,7 @@
       <div class="fim-view" data-reveal="view">
         <span class="fim-hint" aria-hidden="true">Drag to rotate</span>
         <div class="fim-model" data-model="juno">
-          <model-viewer alt="Marble portrait head of Juno Ludovisi, the Roman goddess. Drag, or use the arrow keys, to rotate the sculpture." camera-controls disable-zoom disable-pan interaction-prompt="none" camera-orbit="155deg 84deg 112%" min-camera-orbit="auto 55deg auto" max-camera-orbit="auto 105deg auto" field-of-view="24deg" interpolation-decay="140" shadow-intensity="1" shadow-softness="0.8" exposure="1.0" environment-image="legacy" tone-mapping="neutral"></model-viewer>
+          <model-viewer alt="Marble portrait head of Juno Ludovisi, the Roman goddess. Drag, or use the arrow keys, to rotate the sculpture." camera-controls disable-zoom disable-pan interaction-prompt="none" camera-orbit="155deg 84deg 112%" min-camera-orbit="auto 55deg auto" max-camera-orbit="auto 105deg auto" field-of-view="24deg" interpolation-decay="140" shadow-intensity="1" shadow-softness="0.8" exposure="1.6" environment-image="neutral" tone-mapping="neutral"></model-viewer>
           <div class="fim-loader" role="status"><span>Loading sculpture</span><i></i></div>
         </div>
         <div class="fim-caption" data-reveal>
@@ -87,7 +87,7 @@
       <div class="fim-view" data-reveal="view">
         <span class="fim-hint" aria-hidden="true">Scroll or drag</span>
         <div class="fim-model" data-model="anatomy">
-          <model-viewer alt="Full-body anatomical model of a child showing skeleton, muscles, organs and blood vessels. Use the layer buttons to isolate a system and drag to rotate." camera-controls disable-zoom disable-pan interaction-prompt="none" camera-orbit="150deg 82deg 104%" field-of-view="28deg" min-camera-orbit="auto 60deg auto" max-camera-orbit="auto 100deg auto" interpolation-decay="120" shadow-intensity="0.6" exposure="1.1" environment-image="neutral" tone-mapping="neutral"></model-viewer>
+          <model-viewer alt="Full-body anatomical model of a child showing skeleton, muscles, organs and blood vessels. Use the layer buttons to isolate a system and drag to rotate." camera-controls disable-zoom disable-pan interaction-prompt="none" camera-orbit="150deg 82deg 104%" field-of-view="28deg" min-camera-orbit="auto 60deg auto" max-camera-orbit="auto 100deg auto" interpolation-decay="120" shadow-intensity="0" exposure="1.4" environment-image="neutral" tone-mapping="neutral"></model-viewer>
           <div class="fim-loader" role="status"><span>Loading anatomy</span><i></i></div>
         </div>
         <div class="fim-caption" data-reveal>
