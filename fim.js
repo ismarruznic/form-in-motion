@@ -181,7 +181,7 @@
         });
 
         // 01 — scroll-controlled orbit
-        scrubOrbit('precision', models.watch, { t: [200, 42], p: [80, 68], r: [112, 92] }, false);
+        scrubOrbit('precision', models.watch, { t: [250, 42], p: [80, 68], r: [112, 92], fromTop: true }, false);
         // 03 — guided orbit (drag adds an offset on top of scroll)
         scrubOrbit('anatomy', models.anatomy, { t: [150, 330], p: [82, 76], r: [104, 94] }, true);
       });
@@ -206,7 +206,7 @@
           });
         }
         ScrollTrigger.create({
-          trigger: sec, start: 'top top', end: 'bottom bottom', scrub: 0.9,
+          trigger: sec, start: k.fromTop ? 0 : 'top top', end: 'bottom bottom', scrub: 0.9,
           onUpdate: function (st) {
             var p = st.progress, e = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
             var t = k.t[0] + (k.t[1] - k.t[0]) * e;
